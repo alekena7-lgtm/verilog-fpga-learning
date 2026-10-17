@@ -1,0 +1,12 @@
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF]
+
+
+set_property -dict { PACKAGE_PIN M20 IOSTANDARD LVCMOS33 } [get_ports { enable }];
+set_property -dict { PACKAGE_PIN M19 IOSTANDARD LVCMOS33 } [get_ports { resetn }];
+set_property -dict { PACKAGE_PIN R14 IOSTANDARD LVCMOS33 } [get_ports { count[0] }];
+set_property -dict { PACKAGE_PIN P14 IOSTANDARD LVCMOS33 } [get_ports { count[1] }];
+set_property -dict { PACKAGE_PIN N16 IOSTANDARD LVCMOS33 } [get_ports { count[2] }];
+set_property -dict { PACKAGE_PIN M14 IOSTANDARD LVCMOS33 } [get_ports { count[3] }];
+
+set_property -dict { PACKAGE_PIN L19 IOSTANDARD LVCMOS33 } [get_ports { clk }];
+
